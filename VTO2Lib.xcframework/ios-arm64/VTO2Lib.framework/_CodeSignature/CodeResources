@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/VTO2Communicate.h</key>
 		<data>
-		s46SieUUkHb3LCO2h9yTtm1T32Y=
+		DH34tpXSdkbdB6TZ6T2DO/bmxfE=
 		</data>
 		<key>Headers/VTO2Def.h</key>
 		<data>
-		Gd8KNneo/jg+FILdvrL9ht0bfVg=
+		C7GD0IJrECbQXQrMfkFou9ivdzs=
 		</data>
 		<key>Headers/VTO2Info.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/VTO2Parser.h</key>
 		<data>
-		m2P1cxAV2qF5YZjBX4zI/Q84g80=
+		by12gI3bCfVoVLSTARZt0Zgri6k=
 		</data>
 		<key>Headers/VTO2WaveObject.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		NcGIfaJQ7Nv+6CdfgqXFP5ZH1U0=
+		vifCY+HYTulXw1lMfUUizS0wKbs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,22 +51,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			s46SieUUkHb3LCO2h9yTtm1T32Y=
+			DH34tpXSdkbdB6TZ6T2DO/bmxfE=
 			</data>
 			<key>hash2</key>
 			<data>
-			oti0wyKIUypCOuQNoi5A6Qww7LT1u40AUCjNpNgFppA=
+			EKuHhK0wRsFMH+S6bEhNlu/xhSS5ZqeePwenPxyYDIU=
 			</data>
 		</dict>
 		<key>Headers/VTO2Def.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Gd8KNneo/jg+FILdvrL9ht0bfVg=
+			C7GD0IJrECbQXQrMfkFou9ivdzs=
 			</data>
 			<key>hash2</key>
 			<data>
-			OCWvrG0TPKAlCJodfeA6n0sIAd07dONjzvsAENlCQI8=
+			NuNyyr3uADHmT6X6A7Ylzuak63+trw2oEBPYqaGbxts=
 			</data>
 		</dict>
 		<key>Headers/VTO2Info.h</key>
@@ -106,11 +106,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			m2P1cxAV2qF5YZjBX4zI/Q84g80=
+			by12gI3bCfVoVLSTARZt0Zgri6k=
 			</data>
 			<key>hash2</key>
 			<data>
-			VO/kTwaBNSIxLyosJtT4kwXngjQrizLfl2JKB5E0Vuc=
+			3u7xTBz4ZIb96i+o5aTFWPU5HdgsoZaAcgBDtIiBmBk=
 			</data>
 		</dict>
 		<key>Headers/VTO2WaveObject.h</key>

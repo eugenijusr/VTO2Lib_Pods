@@ -15,6 +15,13 @@
     > Resp: `getInfoWithResultData:`
     >
     > Parse: `parseO2InfoWithData:`
+    
+- Get BabyO2 S2 Station information.
+    > Send: `beginGetStationInfo` 
+    > 
+    > Resp: `getStationInfoWithData:`
+    > 
+    > Parse: `parseStationInfoWithData:`
 
 - Get real-time data. 
     > Send: `beginGetRealData`

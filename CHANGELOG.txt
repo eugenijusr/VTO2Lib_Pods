@@ -1,3 +1,10 @@
+
+## v1.6
+   Supported more command.
+
+## v1.5.2
+   Podspec update
+
 ## v1.5.1
    README.md update.
 
