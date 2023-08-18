@@ -42,7 +42,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (NSArray <VTRealPPG *>*)parseO2RealPPGWithData:(NSData *)realPPG;
 
 
-+ (VTO2StationInfo)parseStationInfoWithData:(NSData * _Nonnull)infoData;
++ (VTO2StationInfo):(NSData * _Nonnull)infoData;
 
 @end
 

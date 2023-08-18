@@ -52,6 +52,8 @@ typedef enum : u_char {
 } VTCmd;
 
 
+#pragma mark - peripheral information's params
+// Supported parameters refer to protocol documentation
 typedef enum : NSUInteger {
     VTParamTypeDate,
     VTParamTypeOxiThr,
@@ -68,6 +70,7 @@ typedef enum : NSUInteger {
     VTParamTypeMtThr,
     VTParamTypeIvSw,
     VTParamTypeIvThr,
+    VTParamTypeSpO2Sw,
 } VTParamType;
 
 
