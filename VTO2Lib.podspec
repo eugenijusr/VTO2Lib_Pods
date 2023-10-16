@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
                 --------------------------------------------
                    DESC
 
-  spec.homepage     = "https://git.lepudev.com/lepusdk/vto2lib"
+  spec.homepage     = "https://github.com/Viatom-iOS/VTO2Lib_Pods"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -79,7 +79,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://git.lepudev.com/lepusdk/vto2lib.git", :tag => spec.version }
+  spec.source       = { :git => "https://github.com/Viatom-iOS/VTO2Lib_Pods.git", :tag => spec.version }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
