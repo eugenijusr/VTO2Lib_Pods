@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "VTO2Lib"
-  spec.version      = "1.9.2"
+  spec.version      = "1.9.3"
   spec.summary      = "Support communication between Lepu's O2 series products and iOS devices."
 
   # This description is used to generate tags and improve search results.
@@ -79,7 +79,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/Viatom-iOS/VTO2Lib_Pods.git", :tag => spec.version }
+  spec.source       = { :git => "https://github.com/Viatom-iOS/VTO2Lib_Pods", :tag => spec.version }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

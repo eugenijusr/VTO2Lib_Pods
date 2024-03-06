@@ -1,3 +1,9 @@
+## v1.9.3
+   Add a method to filter realwave's points.
+
+## v1.9.2
+   Fix some bugs.
+
 ## v1.9.1
    Fix some bugs.
 
