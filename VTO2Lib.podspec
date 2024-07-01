@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "VTO2Lib"
-  spec.version      = "1.9.3"
+  spec.version      = "1.9.4"
   spec.summary      = "Support communication between Lepu's O2 series products and iOS devices."
 
   # This description is used to generate tags and improve search results.
