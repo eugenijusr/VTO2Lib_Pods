@@ -49,7 +49,33 @@ typedef enum : u_char {
     VTCmdGetRealWave = 0x1B,
     VTCmdGetPPG = 0x1C,
     VTCmdGetStationInfo = 0x1D,
+    
 } VTCmd;
+
+typedef enum : u_char {
+    VTA5CmdMakeSend = 0x10,
+    VTA5CmdRealParams = 0x11,
+    VTA5CmdRealWave = 0x12,
+    VTA5CmdRealPPG = 0x13,
+    VTA5CmdRealACC = 0x14,
+    VTA5CmdOpenupEncryption = 0xFF,
+} VTA5Cmd;
+
+typedef enum : u_char {
+    VTA5RespRequest = 0x00,            ///< request
+    VTA5RespNormal = 0x01,             ///< normal
+    VTA5RespNotFound = 0xE0,           ///< not found file
+    VTA5RespOpenFailed = 0xE1,         ///< open file failed
+    VTA5RespReadFailed = 0xE2,         ///< read file failed
+    VTA5RespWriteFailed = 0xE3,        ///< write file failed
+    VTA5RespReadFileListFailed = 0xF1, ///< read file's list failed
+    VTA5RespDeviceOccupied = 0xFB,     ///< device occupied, e.g. use occupied
+    VTA5RespFormatError = 0xFC,
+    VTA5RespFormatUnsupport = 0xFD,
+    VTA5RespCommonError = 0xFF,
+    VTA5RespHeadError = 0xCC,
+    VTA5RespCRCError = 0xCD,
+} VTA5RespRes;
 
 
 #pragma mark - peripheral information's params
@@ -95,6 +121,52 @@ typedef struct{
     VTO2StationSN sn;
     u_char reserved2[1];            // reserved
 } VTO2StationInfo;
+
+
+#pragma pack (1)
+typedef struct{
+    uint32_t    record_time;        ///< duration    unit: second    暂无使用
+    uint8_t     run_state;          ///< run state  0: prepare 1: prepare to measure  2: measuring 3: end
+    uint8_t     sensor_state;       ///< sensor state 0: normal 1: finger out 2: SENSOR_STA_PROBE_OUT 3:  error
+    uint8_t     spo2;
+    uint8_t     pi;                 ///< PI *10 e.g.  15 : PI = 1.5
+    uint16_t    pr;
+    uint8_t     flag;               ///< bit0: Pulse mark
+    uint8_t     motion;
+    uint8_t     battery_state;      ///< battery state    0: normal  1: charging  2: charge full 3: low
+    uint8_t     battery_percent;    ///< battery percent
+    uint8_t     reserved[6];
+} Parameters;
+
+typedef struct {
+    uint32_t index;            //波形数据第一个点相对于起始点的编号 暂无使用
+    uint16_t sampling_num;                //波形数据采样点
+    uint8_t *waveform_data;    //125Hz波形数据
+} VTA5Wave;
+
+
+typedef struct {
+    short ir;
+    short red;
+} VTA5PPG;
+
+typedef struct {
+    uint16_t sampling_num;
+    VTA5PPG *raw_data;
+} VTA5Raw;
+
+typedef struct {
+    int16_t x;
+    int16_t y;
+    int16_t z;
+} VTA5Axis;
+
+
+typedef struct {
+    uint16_t sampling_num;
+    VTA5Axis *data;
+} VTA5Acc;
+#pragma pack()
 
 
 #endif /* VTO2Def_h */

@@ -64,6 +64,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@protocol VTO2A5RespDelegate <NSObject>
+
+/// openup the encryption failed . peripheral will disconnected.
+- (void)a5_openupEncryptResult:(VTA5RespRes)respRes;
+
+
+@end
+
 @interface VTO2Communicate : NSObject
 
 /// @brief This peripheral is currently connected. Need to be set after connection
@@ -75,7 +83,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// @brief time out       ms
 @property (nonatomic, assign) u_int timeout;
 
-@property (nonatomic, assign) id<VTO2CommunicateDelegate> _Nullable delegate;
+@property (nonatomic, weak) id<VTO2CommunicateDelegate> _Nullable delegate;
+
+@property (nonatomic, weak) id<VTO2A5RespDelegate> _Nullable a5Delegate;
 
 + (VTO2Communicate *)sharedInstance;
 
@@ -112,6 +122,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// @brief Download file from peripheral.   callback `readCompleteWithData:`  & `postCurrentReadProgress:`
 /// @param fileName file's name
 - (void)beginReadFileWithFileName:(NSString *)fileName;
+
+- (void)openupEncryptWithToken:(NSString *)token secretKey:(NSString *)key;
 
 @end
 
